@@ -9,29 +9,12 @@ root direction of your elixir project.  This will provide quick navigation
 between source files and their corresponding tests, even for umbrella projects.
 
 This library simply writes a custom `.projections.json` file to your local
-directory.
+directory.  It saves time when you have umbrella projects with many apps.
 
 Note that the `.projections.json` file will be read by `vim-projectionist`, and
 also by the projectionist plugins for `vscode`, `atom` and probably other
 editors.  This library will write a `.projections.json` file both for umbrella
 projects and also for normal mix projects.
-
-## Use as a Mix Task
-
-The package can be installed by adding `ex_projections` to your list of
-dependencies in `mix.exs`:
-
-```elixir
-def deps do
-  [
-    {:ex_projections, git: "https://github.com/andyl/ex_projections"}
-  ]
-end
-```
-
-Once this is done, you can run the mix task:
-
-    mix ex_projections
 
 ## Use as an Escript
 
@@ -50,6 +33,23 @@ Once installed, you can run the escript:
 
     cd <yourproject>
     ex_projections
+
+## Use as a Mix Task
+
+The package can be installed by adding `ex_projections` to your list of
+dependencies in `mix.exs`:
+
+```elixir
+def deps do
+  [
+    {:ex_projections, git: "https://github.com/andyl/ex_projections"}
+  ]
+end
+```
+
+Once this is done, you can run the mix task:
+
+    mix ex_projections
 
 ## Related Projects
 
