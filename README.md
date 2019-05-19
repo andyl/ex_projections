@@ -48,6 +48,7 @@ Then install the escript:
 
 Once installed, you can run the escript:
 
+    cd <yourproject>
     ex_projections
 
 ## Related Projects
