@@ -1,0 +1,10 @@
+{
+  "lib/*.ex": {
+    "alternate": "test/{}_test.exs",
+    "type": "src"
+  },
+  "test/*_test.exs": {
+    "alternate": "lib/{}.ex",
+    "type": "test"
+  }
+}
