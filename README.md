@@ -5,16 +5,15 @@ Elixir's umbrella structure doesn't work out-of-the-box with
 wildcard expression in the path, and umbrella apps require two.
 
 The workaround is to put a custom-generated file `.projections.json` into the
-root direction of your elixir project.  This will provide quick navigation
+root directory of your elixir project.  This will provide quick navigation
 between source files and their corresponding tests, even for umbrella projects.
 
 This library simply writes a custom `.projections.json` file to your local
-directory.  It saves time when you have umbrella projects with many apps.
+directory.  
 
-Note that the `.projections.json` file will be read by `vim-projectionist`, and
+The `.projections.json` file will be read by `vim-projectionist`, and
 also by the projectionist plugins for `vscode`, `atom` and probably other
-editors.  This library will write a `.projections.json` file both for umbrella
-projects and also for normal mix projects.
+editors.  
 
 ## Use as an Escript
 
