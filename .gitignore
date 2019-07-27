@@ -6,6 +6,6 @@
 erl_crash.dump
 *.ez
 ex_projections-*.tar
-ex_projections
+/ex_projections
 .elixir_ls/
 
