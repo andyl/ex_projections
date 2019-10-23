@@ -27,6 +27,7 @@ Then install the escript:
     mix deps.get
     mix compile
     mix escript.install --force
+    asdf reshim elixir           # if using asdf...
 
 Once installed, you can run the escript:
 
