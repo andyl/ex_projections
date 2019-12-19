@@ -35,7 +35,7 @@ defmodule ExProjections.GenData do
   defp test_map(dir) do
     %{
       "apps/#{dir}/test/*_test.exs" => %{
-        "type" => "src",
+        "type" => "test",
         "alternate" => "apps/#{dir}/lib/{}.ex"
       }
     }
