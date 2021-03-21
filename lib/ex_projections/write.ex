@@ -21,7 +21,6 @@ defmodule ExProjections.Write do
     IO.write("Umbrella project - ")
 
     Path.wildcard("apps/*")
-    |> Enum.map(&(String.split(&1, "/") |> List.last()))
     |> ExProjections.GenData.umbrella_project()
   end
 
