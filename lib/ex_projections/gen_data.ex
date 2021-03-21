@@ -1,15 +1,6 @@
 defmodule ExProjections.GenData do
   def mix_project do
-    %{
-      "lib/*.ex" => %{
-        "alternate" => "test/{}_test.exs",
-        "type" => "src"
-      },
-      "test/*_test.exs" => %{
-        "alternate" => "lib/{}.ex",
-        "type" => "test"
-      }
-    }
+    read_projections("lib/projections.json")
   end
 
   def umbrella_project(list) do
@@ -39,5 +30,10 @@ defmodule ExProjections.GenData do
         "alternate" => "apps/#{dir}/lib/{}.ex"
       }
     }
+  end
+
+  def read_projections(path) do
+    File.read!(path)
+    |> Jason.decode!()
   end
 end
